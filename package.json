@@ -1,0 +1,20 @@
+{
+  "name": "Bootstrap with node server template",
+  "version": "1.0.0",
+  "description": "Basic Bootstrap with node server template",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "node-sass": "^3.13.0",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "node-sass --include-path node_modules/bootstrap-sass/assets/stylesheets scss/theme.scss public/css/theme.css",
+    "watch": "nodemon -e scss -x \"npm run build\""
+  },
+  "license": "MIT"
+}
